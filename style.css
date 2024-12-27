@@ -26,7 +26,7 @@ form input {
     width: 100%;
     margin-bottom: 1em;
     padding: 0.8em;
-    border: 1px solid #ccc;
+    border: 1px solid #FFFFFF;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -39,4 +39,40 @@ form button {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 3em;
+}
+
+
+
+.input2 {
+    margin-bottom: 2em;
+}
+
+.input1, .input2 {
+    position: relative;
+}
+
+.input1 input, .input2 input {
+    background: transparent;
+    color: #fff;
+}
+
+.input1 label, .input2 label {
+    position: absolute;
+    left: 0.8em;
+    top: 0.6em;
+    color: #B0B0B0;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.input1 input:focus ~ label,
+.input1 input:valid ~ label,
+.input2 input:focus ~ label,
+.input2 input:valid ~ label {
+    top: -0.5em;
+    left: 0.5em;
+    font-size: 0.8em;
+    background: #1F1B24;
+    padding: 0 0.4em;
+    color: #BB86FC;
 }
