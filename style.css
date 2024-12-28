@@ -1,14 +1,19 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background: #121212;
+    overflow: hidden;
+
 }
 
 form {
     background: #1F1B24;
     width: 300px;
-    margin: 200px auto;
+    margin: 160px auto;
     padding: 3em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -35,32 +40,35 @@ form button {
     background: #BB86FC;
     color: #fff;
     border: none;
-    padding: 0.8em 10em;
+    padding: 1em 10em;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 3em;
 }
 
+.signup button {
+  white-space: nowrap;
+  padding: 1em 8em;
+  width: 100%;
+} 
 
-
-.input2 {
+.input1 {
     margin-bottom: 2em;
 }
-
-.input1, .input2 {
+.input1, .input2, .input3, .codeInput {
     position: relative;
 }
 
-.input1 input, .input2 input {
+.input1 input, .input2 input, .input3 input, .codeInput input {
     background: transparent;
     color: #fff;
 }
 
-.input1 label, .input2 label {
+.input1 label, .input2 label, .input3 label, .codeInput label { 
     position: absolute;
     left: 0.8em;
     top: 0.6em;
-    color: #B0B0B0;
+    color: #dddddd;
     pointer-events: none;
     transition: 0.2s ease all;
 }
@@ -68,11 +76,46 @@ form button {
 .input1 input:focus ~ label,
 .input1 input:valid ~ label,
 .input2 input:focus ~ label,
-.input2 input:valid ~ label {
+.input2 input:valid ~ label,
+.input3 input:focus ~ label,
+.input3 input:valid ~ label,
+.codeInput input:focus ~ label,
+.codeInput input:valid ~ label {
     top: -0.5em;
     left: 0.5em;
     font-size: 0.8em;
     background: #1F1B24;
     padding: 0 0.4em;
     color: #BB86FC;
+}
+
+.registro {
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+a {
+    color: #BB86FC;
+    text-decoration: none;    
+}
+
+.forgot button {
+    margin-top: 1em;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.changepassword button {
+    margin-top: 1em;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1em;
 }

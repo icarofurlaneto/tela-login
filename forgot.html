@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="icon" href="assets/cadeado.ico" />
+    <link rel="stylesheet" href="style.css">
+    <title>Recuperar Conta</title>
+</head>
+<body>
+    <section class="forgot">
+        <form>
+          <img src="assets/chave.png" alt="Imagem de Login" />
+          <h1>Recuperar conta</h1>
+          <div class="input1">
+            <input type="email" required />
+            <label>E-mail</label>
+          </div>
+          <div id="codeInput" class="codeInput" style="display: none;">
+            <input type="number" required />
+            <label>Código de recuperação</label>
+          </div>
+          <button type="button" onclick="showCodeInput()">Enviar código de recuperação</button>
+          <a href="login.html">Voltar ao login</a>
+        </form>
+      </section>
+</body>
+</html>

@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/cadeado.ico" />
+    <link rel="img" href="assets/login.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,17 +13,25 @@
     <title>Login</title>
   </head>
   <body>
-    <form>
-      <h1>Log in</h1>
-      <div class="input1">
-        <input type="email" required />
-        <label>E-mail</label>
-      </div>
-      <div class="input2">
-        <input type="password" required />
-        <label>Senha</label>
-      </div>
-      <button type="submit">Entrar</button>
-    </form>
+    <section class="login">
+      <form>
+        <img src="assets/login.png" alt="Imagem de Login" />
+        <h1>Log in</h1>
+        <div class="input1">
+          <input type="email" required />
+          <label>E-mail</label>
+        </div>
+        <div class="input2">
+          <input type="password" required />
+          <label>Senha</label>
+          <a href="forgot.html">Esqueceu a senha?</a>
+        </div>
+        <button type="submit">Entrar</button>
+        <div class="registro">
+          <p>Não possui uma conta?<p>
+            <a href="signup.html">Registre por aqui</a>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
